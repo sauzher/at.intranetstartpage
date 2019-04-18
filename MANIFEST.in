@@ -1,0 +1,4 @@
+graft src/at
+graft docs
+include *.rst
+global-exclude *.pyc
