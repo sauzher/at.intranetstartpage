@@ -11,6 +11,14 @@
       layer="at.intranetstartpage.interfaces.IAtIntranetstartpageLayer"
       />
 
+  <browser:page
+    name="startpage"
+    for="*"
+    permission="zope2.View"
+    class=".startpage.StartPageView"
+    layer="at.intranetstartpage.interfaces.IAtIntranetstartpageLayer"
+    />
+
   <!-- Publish static files -->
   <plone:static
       name="at.intranetstartpage"
