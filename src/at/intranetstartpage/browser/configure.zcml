@@ -19,6 +19,15 @@
     layer="at.intranetstartpage.interfaces.IAtIntranetstartpageLayer"
     />
 
+
+    <browser:menuItem
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        menu="plone_displayviews"
+        title="Intranet Startpage"
+        action="@@startpage"
+        description="shows at.intranetetstartpage"
+        />
+
   <!-- Publish static files -->
   <plone:static
       name="at.intranetstartpage"
