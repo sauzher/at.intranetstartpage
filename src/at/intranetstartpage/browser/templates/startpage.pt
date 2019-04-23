@@ -2,14 +2,138 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       metal:use-macro="context/main_template/macros/master">
-
-    <metal:block fill-slot="content-core">
-        <div>
-            <h1>Hello this is the BGETEM Intranet Start page
-
-            </h1>
-            <p>no content yet</p>
+<head>
+    <metal:block fill-slot="top_slot"
+ tal:define="dummy python:request.set('disable_border',1);
+ disable_column_one python:request.set('disable_plone.leftcolumn',1);
+ disable_column_two python:request.set('disable_plone.rightcolumn',0);" />
+</head>
+<body>
+    <metal:block fill-slot="content-core">                         
+        <div class="startpage-cluster-left col-xs-12 col-md-7">
+    	  <div class="row">
+    	    <div class="media">
+              <hr class="media-default">
+              <a href="https://bgetem.abzt.de/Plone/testordner/koeln-schneeengel-serie">
+          	<div class="col-sm-3 col-xs-12">
+            	  <img src="https://bgetem.abzt.de/Plone/testordner/koeln-schneeengel-serie/image" alt="Köln: Schneeengel Serie" title="" height="1280" width="1920" class="img-responsive img-summary">
+          	</div>
+          	<div class="col-sm-9 col-xs-12">
+            	  <h3 class="newsDescription">16.01.2019 - Adventsquiz: Gewinner/innen stehen fest</h3>
+            	  <p class="tileBody">
+              	    <span class="description">Die 25 Gewinnerinnen und Gewinner des Adventsquiz 2018 stehen fest. Die interne Kommunikation dankt allen fürs Mitmachen, gratuliert den Gewinner/innen herzlich und versendet in d Kürze die Preise.</span>
+            	  </p>
+	        </div>
+              </a>
+    	    </div>
+  	  </div>
+	  <!-- second Article -->
+	  <div class="row">
+            <div class="media">
+              <hr class="media-default">
+              <a href="https://bgetem.abzt.de/Plone/testordner/koeln-schneeengel-serie">
+                <div class="col-sm-3 col-xs-12">
+                  <img src="https://bgetem.abzt.de/Plone/testordner/koeln-schneeengel-serie/image" alt="Köln: Schneeengel Serie" title="" height="1280" width="1920" class="img-responsive img-summary">
+                </div>
+                <div class="col-sm-9 col-xs-12">
+                  <h3 class="newsDescription">15.01.2019 - Zahl der Woche: 44,8 Millionen</h3>
+                  <p class="tileBody">
+                    <span class="description">Die 25 Gewinnerinnen und Gewinner des Adventsquiz 2018 stehen fest. Die interne Kommunikation dankt allen fürs Mitmachen, gratuliert den Gewinner/innen herzlich und versendet in d Kürze die Preise.</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+	  <!-- third Article -->
+	  <div class="row">
+            <div class="media">
+              <hr class="media-default">
+              <a href="https://bgetem.abzt.de/Plone/testordner/koeln-schneeengel-serie">
+                <div class="col-sm-3 col-xs-12">
+                  <img src="https://bgetem.abzt.de/Plone/testordner/koeln-schneeengel-serie/image" alt="Köln: Schneeengel Serie" title="" height="1280" width="1920" class="img-responsive img-summary">
+                </div>
+                <div class="col-sm-9 col-xs-12">
+                  <h3 class="newsDescription">11.01.2019 - Reisekostenstelle informiert</h3>
+                  <p class="tileBody">
+                    <span class="description">Die 25 Gewinnerinnen und Gewinner des Adventsquiz 2018 stehen fest. Die interne Kommunikation dankt allen fürs Mitmachen, gratuliert den Gewinner/innen herzlich und versendet in d Kürze die Preise.</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+	  <!-- Button -->
+	  <div>
+            <a class="btn btn-default" href="#">Mehr Nachrichten lesen</a>
+          </div>
+	</div>
+	<div class="startpage-cluster-right col-xs-12 col-md-5">
+	<div class="startpage-cluster-right-top">
+    		<div class="row">
+    		   <div class="media">
+        	      <hr class="media-default">
+        	      <a href="https://bgetem.abzt.de/Plone/testordner/koeln-schneeengel-serie">
+          		<div class="col-xs-12">
+            		  <h3 class="newsDescription">Köln: Ab 17.01.2019 sind Schranken zur Ein- und Ausfahrt HV aktiv</h3>
+            		  <p class="tileBody">
+              		    <span class="description">Die innere Verwaltung hat bereits im November 2018 angekündigt, dass die Schranken der HV Köln...</span>
+            		  </p>
+          		</div>
+       		      </a>
+		   </div>
+		</div>
+		<!-- second Article -->
+		<div class="row">
+                   <div class="media">
+                      <hr class="media-default">
+                      <a href="https://bgetem.abzt.de/Plone/testordner/koeln-schneeengel-serie">
+                        <div class="col-xs-12">
+                          <h3 class="newsDescription">Köln: Beratung zur Altersvorsorge am 16.01.</h3>
+                          <p class="tileBody">
+                            <span class="description">Die innere Verwaltung hat bereits im November 2018 angekündigt, dass die Schranken der HV Köln...</span>
+                          </p>
+                        </div>
+                      </a>
+                   </div>
+                </div>
+		<!-- Button -->
+		<div>
+                  <a class="btn btn-default" href="#">Mehr Nachrichten lesen</a>
+                </div>
+	</div>
+	<div class="startpage-cluster-right-below">
+                <div class="row">
+                   <div class="media">
+                      <hr class="media-default">
+                      <a href="https://bgetem.abzt.de/Plone/testordner/koeln-schneeengel-serie">
+                        <div class="col-xs-12">
+                          <h3 class="newsDescription">PR BG ETEM: Personalversammlung im 1. Halbjahr</h3>
+                          <p class="tileBody">
+                            <span class="description">Der Personalrat BG ETEM gibt die Termine für die Personalversammlung an den Standorten Augs...</span>
+                          </p>
+                        </div>  
+                      </a>
+                   </div>
+                </div>
+		<!-- second Article -->
+		<div class="row">
+                   <div class="media">
+                      <hr class="media-default">
+                      <a href="https://bgetem.abzt.de/Plone/testordner/koeln-schneeengel-serie">
+                        <div class="col-xs-12">
+                          <h3 class="newsDescription">Personal: Arbeitszeit zu Karneval</h3>
+                          <p class="tileBody">
+                            <span class="description">Der Personalrat BG ETEM gibt die Termine für die Personalversammlung an den Standorten Augs...</span>
+                          </p>
+                        </div>  
+                      </a>
+                   </div>
+                </div>
+		<!-- Button -->
+		<div>
+		  <a class="btn btn-default" href="#">Mehr Nachrichten lesen</a>
+		</div>
+		</div>    
         </div>
     </metal:block>
-
+</body>
 </html>
